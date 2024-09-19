@@ -1,0 +1,17 @@
+form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+form fieldset {
+  margin-bottom: 20px;
+  padding: 10px;
+}
+form label {
+  display: block;
+  margin-bottom: 5px;
+}
+form input, form select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}/*# sourceMappingURL=payment.css.map */

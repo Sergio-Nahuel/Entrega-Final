@@ -1,0 +1,18 @@
+// Mixins
+@mixin button-styles($bg-color, $text-color) {
+  background-color: $bg-color;
+  color: $text-color;
+  padding: $padding-base;
+  border: none;
+  font-size: 1.2em;
+  border-radius: $border-radius;
+  cursor: pointer;
+}
+
+@mixin transition($duration, $property) {
+  transition: $property $duration ease-in-out;
+}
+
+@mixin box-shadow($value) {
+  box-shadow: $value;
+}

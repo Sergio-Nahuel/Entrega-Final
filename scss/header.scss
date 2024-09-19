@@ -1,0 +1,32 @@
+// Header
+header {
+  background-color: $secondary-color;
+  color: $light-color;
+  padding: 20px 0;
+
+  nav {
+    .nav-link {
+      color: $light-color;
+
+      &:hover {
+        color: $hover-color;
+      }
+    }
+  }
+}
+
+.logo {
+  display: flex;
+  padding: 1rem;
+  background-color: #cabf9c;
+
+  img {
+    height: 120px;
+    margin-left: 20px;
+  }
+
+  .logo-telefono {
+    height: 23px;
+    margin-right: 70px;
+  }
+}

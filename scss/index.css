@@ -1,0 +1,38 @@
+main img {
+  width: 100%;
+  height: auto;
+  margin: 20px 0;
+}
+
+.slider-frame {
+  width: 854px;
+  margin: 50px auto 0;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.slider-frame ul {
+  display: flex;
+  width: 400%;
+  animation: slide 20s infinite alternate ease-in-out;
+}
+.slider-frame ul li {
+  width: 100%;
+  list-style: none;
+}
+.slider-frame ul li img {
+  width: 100%;
+}
+@keyframes slide {
+  0%, 20% {
+    margin-left: 0;
+  }
+  25%, 45% {
+    margin-left: -100%;
+  }
+  50%, 70% {
+    margin-left: -200%;
+  }
+  75%, 100% {
+    margin-left: -300%;
+  }
+}/*# sourceMappingURL=index.css.map */

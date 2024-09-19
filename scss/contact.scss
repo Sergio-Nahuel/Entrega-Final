@@ -1,0 +1,30 @@
+// Contact form
+form {
+    max-width: 600px;
+    margin: 20px auto;
+  
+    .form-group {
+      margin-bottom: 15px;
+    }
+  
+    label {
+      font-weight: bold;
+    }
+  
+    input, textarea {
+      width: 100%;
+      padding: $padding-base;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: $border-radius;
+    }
+  
+    button {
+      @include button-styles($primary-color, $light-color);
+  
+      &:hover {
+        background-color: darken($primary-color, 10%);
+      }
+    }
+  }
+  

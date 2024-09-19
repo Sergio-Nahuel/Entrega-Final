@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOTEL RANSER - Pago </title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <header class="bg-dark text-white text-center p-4">
+        <h1>HOTEL RANSER</h1>
+        <nav>
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a href="habitaciones.html" class="nav-link text-white">Habitaciones</a></li>
+                <li class="nav-item"><a href="servicios.html" class="nav-link text-white">Servicios</a></li>
+                <li class="nav-item"><a href="contacto.html" class="nav-link text-white">Contacto</a></li>
+                <li class="nav-item"><a href="pago.html" class="nav-link text-white">Método de Pago</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Reserva de Pieza</h1>
+    <form id="reservaForm">
+        <!-- Información de la pieza -->
+        <fieldset>
+            <legend>Información de la Pieza</legend>
+            <label for="pieza">Pieza a Reservar:</label>
+            <input type="text" id="pieza" name="pieza" required>
+            <label for="cantidad">Cantidad:</label>
+            <input type="number" id="cantidad" name="cantidad" required>
+        </fieldset>
+
+        <!-- Información del Usuario -->
+        <fieldset>
+            <legend>Información del Usuario</legend>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+        </fieldset>
+
+        <!-- Método de Pago -->
+        <fieldset>
+            <legend>Método de Pago</legend>
+            <label for="metodoPago">Método de Pago:</label>
+            <select id="metodoPago" name="metodoPago" required>
+                <option value="ft">Transferencia Bancaria</option>
+                <option value="tarjeta">Tarjeta de Crédito</option>
+            </select>
+
+            <!-- Detalles de la Tarjeta -->
+
+            <div id="tarjetaDetails" style="display: none;">
+                <label for="tarjetaNumero">Número de Tarjeta:</label>
+                <input type="text" id="tarjetaNumero" name="tarjetaNumero">
+                <label for="tarjetaNombre">Nombre en la Tarjeta:</label>
+                <input type="text" id="tarjetaNombre" name="tarjetaNombre">
+                <label for="tarjetaFecha">Fecha de Expiración:</label>
+                <input type="text" id="tarjetaFecha" name="tarjetaFecha" placeholder="MM/AA">
+                <label for="tarjetaCVV">CVV:</label>
+                <input type="text" id="tarjetaCVV" name="tarjetaCVV">
+            </div>
+        </fieldset>
+
+        <button type="submit">Reservar</button>
+    </form>
+
+    <a href="./index.html" class="primerpag">Home</a>
+
+
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Sección de Contacto -->
+                <div class="col-md-4">
+                    <h5>Contacto</h5>
+                    <p><i class="fas fa-map-marker-alt"></i> 100 Messi, Buenos Aires, Argentina</p>
+                    <p><i class="fas fa-phone"></i> +123 456 789</p>
+                    <p><i class="fas fa-envelope"></i> info@hotelranser.com</p>
+                </div>
+                <!-- Sección de Enlaces Rápidos -->
+                <div class="col-md-4">
+                    <h5>Enlaces Rápidos</h5>
+                    <ul class="list-unstyled">
+
+                        <li><a href="habitaciones.html" class="text-white">Habitaciones</a></li>
+                        <li><a href="servicios.html" class="text-white">Servicios</a></li>
+                        <li><a href="contacto.html" class="text-white">Contacto</a></li>
+                        <li><a href="pago.html" class="text-white">Método de Pago</a></li>
+                        <li><a href="index.html"class="text-white">Home</a></li>
+                    </ul>
+                </div>
+
+
+            </div>
+    </footer>
+</body>
+
+</html>

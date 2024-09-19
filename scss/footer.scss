@@ -1,0 +1,32 @@
+// Footer
+footer {
+  background-color: $secondary-color;
+  color: $light-color;
+  padding: 40px 0;
+
+  h5 {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+
+  p {
+    margin-bottom: 10px;
+  }
+
+  a {
+    color: $light-color;
+    text-decoration: none;
+
+    &:hover {
+      color: $hover-color;
+    }
+  }
+
+  .fab {
+    font-size: 1.5em;
+  }
+
+  .me-3 {
+    margin-right: 1rem !important;
+  }
+}
